@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <link rel="stylesheet" href="style/style.css">
+    
+</head>
+<body>
+
+    <!-- Navbar start -->
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+
+          <a class="navbar-brand" href="#">
+            <img style="width: 100px;" src="https://www.pngall.com/wp-content/uploads/13/Shopify-Logo-PNG.png" alt="">
+          </a>
+
+          <i data-bs-toggle="offcanvas" href="#cartSidebar" role="button" aria-controls="offcanvasExample" class="bi bi-basket3 d-lg-none d-md-block d-block me-4"></i>
+
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+              </li>
+
+              <div class="categories-block d-lg-flex">
+
+              
+                  <!-- <li class="nav-item">
+                    <a class="nav-link text-light" href="#">Phone</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="#">Computer</a>
+                  </li> -->
+
+                  <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Watch
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Men</a></li>
+                      <li><a class="dropdown-item" href="#">Woment</a></li>
+                    </ul>
+                  </li> -->
+
+               </div>
+              
+            </ul>
+
+            
+            <form class="d-flex me-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button> 
+            </form>
+
+            <i data-bs-toggle="offcanvas" href="#cartSidebar" role="button" aria-controls="offcanvasExample" class="bi bi-basket3 d-lg-block d-md-none d-none  me-4"></i>
+           
+
+           
+          </div>
+
+
+        </div>
+    </nav>
+    <!-- Navbar end -->
+
+
+    <!-- Cart sidebar start -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartSidebar" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Cart Item</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+
+
+          <div class="cart-items-list">
+
+            <div class="cart-item d-flex justify-content-between align-items-center mb-2">
+
+                <img style="width: 70px;" src="https://tradingshenzhen.com/13803-large_default/vivo-x100-16gb256gb.jpg" alt="">
+                <p><span class=" badge bg-success">$400</span></p>
+                <p>Quantity : 3</p>
+                <button class="btn btn-sm btn-danger">Remove</button>
+
+            </div>
+
+            <div class="cart-item d-flex justify-content-between align-items-center mb-2">
+
+                <img style="width: 70px;" src="https://tradingshenzhen.com/13803-large_default/vivo-x100-16gb256gb.jpg" alt="">
+                <p><span class=" badge bg-success">$400</span></p>
+                <p>Quantity : 3</p>
+                <button class="btn btn-sm btn-danger">Remove</button>
+
+            </div>
+
+            <div class="cart-item d-flex justify-content-between align-items-center mb-2">
+
+                <img style="width: 70px;" src="https://tradingshenzhen.com/13803-large_default/vivo-x100-16gb256gb.jpg" alt="">
+                <p><span class=" badge bg-success">$400</span></p>
+                <p>Quantity : 3</p>
+                <button class="btn btn-sm btn-danger">Remove</button>
+
+            </div>
+
+            <div class="cart-item d-flex justify-content-between align-items-center mb-2">
+
+                <img style="width: 70px;" src="https://tradingshenzhen.com/13803-large_default/vivo-x100-16gb256gb.jpg" alt="">
+                <p><span class=" badge bg-success">$400</span></p>
+                <p>Quantity : 3</p>
+                <button class="btn btn-sm btn-danger">Remove</button>
+
+            </div>
+
+            <div class="cart-item d-flex justify-content-between align-items-center mb-2">
+
+                <img style="width: 70px;" src="https://tradingshenzhen.com/13803-large_default/vivo-x100-16gb256gb.jpg" alt="">
+                <p><span class=" badge bg-success">$400</span></p>
+                <p>Quantity : 3</p>
+                <button class="btn btn-sm btn-danger">Remove</button>
+
+            </div>
+
+            <div class="cart-item d-flex justify-content-between align-items-center mb-2">
+
+                <img style="width: 70px;" src="https://tradingshenzhen.com/13803-large_default/vivo-x100-16gb256gb.jpg" alt="">
+                <p><span class=" badge bg-success">$400</span></p>
+                <p>Quantity : 3</p>
+                <button class="btn btn-sm btn-danger">Remove</button>
+
+            </div>
+
+            <div class="cart-item d-flex justify-content-between align-items-center mb-2">
+
+                <img style="width: 70px;" src="https://tradingshenzhen.com/13803-large_default/vivo-x100-16gb256gb.jpg" alt="">
+                <p><span class=" badge bg-success">$400</span></p>
+                <p>Quantity : 3</p>
+                <button class="btn btn-sm btn-danger">Remove</button>
+
+            </div>
+
+            <div class="cart-item d-flex justify-content-between align-items-center mb-2">
+
+                <img style="width: 70px;" src="https://tradingshenzhen.com/13803-large_default/vivo-x100-16gb256gb.jpg" alt="">
+                <p><span class=" badge bg-success">$400</span></p>
+                <p>Quantity : 3</p>
+                <button class="btn btn-sm btn-danger">Remove</button>
+
+            </div>
+
+            <div class="cart-item d-flex justify-content-between align-items-center mb-2">
+
+                <img style="width: 70px;" src="https://tradingshenzhen.com/13803-large_default/vivo-x100-16gb256gb.jpg" alt="">
+                <p><span class=" badge bg-success">$400</span></p>
+                <p>Quantity : 3</p>
+                <button class="btn btn-sm btn-danger">Remove</button>
+
+            </div>
+
+            <div class="cart-item d-flex justify-content-between align-items-center mb-2">
+
+                <img style="width: 70px;" src="https://tradingshenzhen.com/13803-large_default/vivo-x100-16gb256gb.jpg" alt="">
+                <p><span class=" badge bg-success">$400</span></p>
+                <p>Quantity : 3</p>
+                <button class="btn btn-sm btn-danger">Remove</button>
+
+            </div>
+
+            <div class="cart-item d-flex justify-content-between align-items-center mb-2">
+
+                <img style="width: 70px;" src="https://tradingshenzhen.com/13803-large_default/vivo-x100-16gb256gb.jpg" alt="">
+                <p><span class=" badge bg-success">$400</span></p>
+                <p>Quantity : 3</p>
+                <button class="btn btn-sm btn-danger">Remove</button>
+
+            </div>
+
+            <div class="cart-item d-flex justify-content-between align-items-center mb-2">
+
+                <img style="width: 70px;" src="https://tradingshenzhen.com/13803-large_default/vivo-x100-16gb256gb.jpg" alt="">
+                <p><span class=" badge bg-success">$400</span></p>
+                <p>Quantity : 3</p>
+                <button class="btn btn-sm btn-danger">Remove</button>
+
+            </div>
+
+
+          </div>
+
+          
+
+          
+         
+
+          <div class="checkout">
+             <button class=" btn btn-success">PRODUCT CHECKOUT</button>
+          </div>
+
+      </div>
+    </div>
+    <!-- Cart sidebar end -->
+
+
+    <!-- Content start -->
+    <div class=" container mt-4">
+
+      <!-- Slide start -->
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+
+          <div class="carousel-item active" data-bs-interval="5000">
+            <img src="https://media.product.which.co.uk/prod/images/original/f4e8c0ef7c7b-phones-vertical-header.jpg" class="d-block w-100" alt="...">
+          </div>
+
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="https://allgen.com/wp-content/uploads/2019/11/san-antonio-computer-store-parts-department.jpg" class="d-block w-100" alt="...">
+          </div>
+
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="https://rotarywatches.com/cdn/shop/files/Rotary_seamatic_yellow_dial_desktop_banner.png?v=1729177044&width=3200" class="d-block w-100" alt="...">
+          </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+
+      </div>
+      <!-- Slide end-->
+
+
+      <!-- Category content start -->
+      <div class="category-content">
+          <h2 class=" text-center mb-4 opacity-75"><u>CATEGORIES</u></h2>
+         <div class="row p-0 m-0">
+
+            <div class="col-lg-6 p-0 mb-2">
+
+              <div class="row p-0 m-0">
+
+                  <div class="col-12 category-data mb-2 ps-lg-0">
+                      <div class="card">
+                          <img src="https://cdn.mos.cms.futurecdn.net/AVEcca7TuDmt8wjaFZPkzj.jpg" alt="">
+                          <div class="description">
+                             <h2>Phone</h2>
+                             <p>Phone the popular for combodain</p>
+                             <p>100 product</p>
+                          </div>
+                          <div class="opacity"></div>
+                      </div>
+                  </div>
+
+                  <div class="col-12 category-data ps-lg-0">
+                    <div class="card">
+                        <img src="https://thumbs.dreamstime.com/z/variety-computers-both-laptop-desktops-sale-computer-store-computers-sale-computer-store-135429635.jpg" alt="">
+                        <div class="description">
+                            <h2>Computer</h2>
+                            <p>Computer the popular for combodain</p>
+                            <p>50 product</p>
+                        </div>
+                        <div class="opacity"></div>
+                    </div>
+                  </div>
+
+              </div>
+
+            </div>
+
+            <div class="col-lg-6 p-0 category-data">
+               <div class="card">
+                    <img class="cate-watch" src="https://images.squarespace-cdn.com/content/v1/55e87a4ae4b0ef4233ddf7a9/1444399319901-ND4DBMDC9FZTIHHDT6O0/IMG_0297.JPG" alt="">
+                    <div class="description">
+                      <h2>Watch</h2>
+                      <p>Watch the popular for combodain</p>
+                      <p>30 product</p>
+                    </div>
+                    <div class="opacity-watch"></div>
+               </div>
+            </div>
+
+         </div>
+      </div>
+      <!-- Category content end -->
+
+
+      <!-- products content start -->
+      <div class="all-product my-5">
+           <h2 class=" text-center mb-5 opacity-75">
+              <u>ALL PRODUCTS</u>
+           </h2>
+
+           <div class="row p-0 m-0">
+
+              <div class="col-lg-3 ps-md-0 col-md-6 mb-3 product">
+                  <div class=" card shadow-sm ">
+                      <img class="" src="https://tradingshenzhen.com/13803-large_default/vivo-x100-16gb256gb.jpg" alt="">
+
+                      <div class="card-body p-4">
+                         <h5>VIVO V50 camera x100</h5>
+                         <del  class=" badge bg-danger">$500</del>
+                         <span class=" badge bg-success">$450</span>
+
+                         <div class="detail d-flex justify-content-center align-items-center">
+                          <i data-bs-toggle="modal" data-bs-target="#viewProduct" class="bi bi-search"></i>
+                          <i class="bi bi-heart"></i>
+                          <i class="bi bi-cart-plus"></i>
+                         </div>
+
+                      </div>
+
+                      
+
+                  </div>
+              </div>
+
+              <div class="col-lg-3 ps-md-0 col-md-6 mb-3 product">
+                <div class=" card shadow-sm ">
+                    <img class="" src="https://tradingshenzhen.com/13803-large_default/vivo-x100-16gb256gb.jpg" alt="">
+
+                    <div class="card-body p-4">
+                       <h5>VIVO V50 camera x100</h5>
+                       <del  class=" badge bg-danger">$500</del>
+                       <span class=" badge bg-success">$450</span>
+
+                       <div class="detail d-flex justify-content-center align-items-center">
+                        <i data-bs-toggle="modal" data-bs-target="#viewProduct" class="bi bi-search"></i>
+                        <i class="bi bi-heart"></i>
+                        <i class="bi bi-cart-plus"></i>
+                       </div>
+
+                    </div>
+
+                    
+
+                </div>
+              </div>
+
+              <div class="col-lg-3 ps-md-0 col-md-6 mb-3 product">
+                <div class=" card shadow-sm ">
+                    <img class="" src="https://tradingshenzhen.com/13803-large_default/vivo-x100-16gb256gb.jpg" alt="">
+
+                    <div class="card-body p-4">
+                       <h5>VIVO V50 camera x100</h5>
+                       <del  class=" badge bg-danger">$500</del>
+                       <span class=" badge bg-success">$450</span>
+
+                       <div class="detail d-flex justify-content-center align-items-center">
+                        <i data-bs-toggle="modal" data-bs-target="#viewProduct" class="bi bi-search"></i>
+                        <i class="bi bi-heart"></i>
+                        <i class="bi bi-cart-plus"></i>
+                       </div>
+
+                    </div>
+
+                    
+
+                </div>
+              </div>
+
+              <div class="col-lg-3 ps-md-0 col-md-6 mb-3 product">
+                <div class=" card shadow-sm ">
+                    <img class="" src="https://tradingshenzhen.com/13803-large_default/vivo-x100-16gb256gb.jpg" alt="">
+
+                    <div class="card-body p-4">
+                       <h5>VIVO V50 camera x100</h5>
+                       <del  class=" badge bg-danger">$500</del>
+                       <span class=" badge bg-success">$450</span>
+
+                       <div class="detail d-flex justify-content-center align-items-center">
+                        <i data-bs-toggle="modal" data-bs-target="#viewProduct" class="bi bi-search"></i>
+                        <i class="bi bi-heart"></i>
+                        <i class="bi bi-cart-plus"></i>
+                       </div>
+
+                    </div>
+
+                    
+
+                </div>
+              </div>
+
+              <div class="col-lg-3 ps-md-0 col-md-6 mb-3 product">
+                <div class=" card shadow-sm ">
+                    <img class="" src="https://tradingshenzhen.com/13803-large_default/vivo-x100-16gb256gb.jpg" alt="">
+
+                    <div class="card-body p-4">
+                       <h5>VIVO V50 camera x100</h5>
+                       <del  class=" badge bg-danger">$500</del>
+                       <span class=" badge bg-success">$450</span>
+
+                       <div class="detail d-flex justify-content-center align-items-center">
+                        <i data-bs-toggle="modal" data-bs-target="#viewProduct" class="bi bi-search"></i>
+                        <i class="bi bi-heart"></i>
+                        <i class="bi bi-cart-plus"></i>
+                       </div>
+
+                    </div>
+
+                    
+
+                </div>
+              </div>
+
+              <div class="col-lg-3 ps-md-0 col-md-6 mb-3 product">
+                <div class=" card shadow-sm ">
+                    <img class="" src="https://tradingshenzhen.com/13803-large_default/vivo-x100-16gb256gb.jpg" alt="">
+
+                    <div class="card-body p-4">
+                       <h5>VIVO V50 camera x100</h5>
+                       <del  class=" badge bg-danger">$500</del>
+                       <span class=" badge bg-success">$450</span>
+
+                       <div class="detail d-flex justify-content-center align-items-center">
+                        <i data-bs-toggle="modal" data-bs-target="#viewProduct" class="bi bi-search"></i>
+                        <i class="bi bi-heart"></i>
+                        <i class="bi bi-cart-plus"></i>
+                       </div>
+
+                    </div>
+
+                    
+
+                </div>
+              </div>
+
+              <div class="col-lg-3 ps-md-0 col-md-6 mb-3 product">
+                <div class=" card shadow-sm ">
+                    <img class="" src="https://tradingshenzhen.com/13803-large_default/vivo-x100-16gb256gb.jpg" alt="">
+
+                    <div class="card-body p-4">
+                       <h5>VIVO V50 camera x100</h5>
+                       <del  class=" badge bg-danger">$500</del>
+                       <span class=" badge bg-success">$450</span>
+
+                       <div class="detail d-flex justify-content-center align-items-center">
+                        <i data-bs-toggle="modal" data-bs-target="#viewProduct" class="bi bi-search"></i>
+                        <i class="bi bi-heart"></i>
+                        <i class="bi bi-cart-plus"></i>
+                       </div>
+
+                    </div>
+
+                    
+
+                </div>
+              </div>
+
+              <div class="col-lg-3 ps-md-0 col-md-6 mb-3 product">
+                <div class=" card shadow-sm ">
+                    <img class="" src="https://tradingshenzhen.com/13803-large_default/vivo-x100-16gb256gb.jpg" alt="">
+
+                    <div class="card-body p-4">
+                       <h5>VIVO V50 camera x100</h5>
+                       <del  class=" badge bg-danger">$500</del>
+                       <span class=" badge bg-success">$450</span>
+
+                       <div class="detail d-flex justify-content-center align-items-center">
+                        <i data-bs-toggle="modal" data-bs-target="#viewProduct" class="bi bi-search"></i>
+                        <i class="bi bi-heart"></i>
+                        <i class="bi bi-cart-plus"></i>
+                       </div>
+
+                    </div>
+
+                    
+
+                </div>
+              </div>
+
+              <div class="col-lg-3 ps-md-0 col-md-6 mb-3 product">
+                <div class=" card shadow-sm ">
+                    <img class="" src="https://tradingshenzhen.com/13803-large_default/vivo-x100-16gb256gb.jpg" alt="">
+
+                    <div class="card-body p-4">
+                       <h5>VIVO V50 camera x100</h5>
+                       <del  class=" badge bg-danger">$500</del>
+                       <span class=" badge bg-success">$450</span>
+
+                       <div class="detail d-flex justify-content-center align-items-center">
+                        <i data-bs-toggle="modal" data-bs-target="#viewProduct" class="bi bi-search"></i>
+                        <i class="bi bi-heart"></i>
+                        <i class="bi bi-cart-plus"></i>
+                       </div>
+
+                    </div>
+
+                    
+
+                </div>
+              </div>
+
+              <div class="col-lg-3 ps-md-0 col-md-6 mb-3 product">
+                <div class=" card shadow-sm ">
+                    <img class="" src="https://tradingshenzhen.com/13803-large_default/vivo-x100-16gb256gb.jpg" alt="">
+
+                    <div class="card-body p-4">
+                       <h5>VIVO V50 camera x100</h5>
+                       <del  class=" badge bg-danger">$500</del>
+                       <span class=" badge bg-success">$450</span>
+
+                       <div class="detail d-flex justify-content-center align-items-center">
+                        <i data-bs-toggle="modal" data-bs-target="#viewProduct" class="bi bi-search"></i>
+                        <i class="bi bi-heart"></i>
+                        <i class="bi bi-cart-plus"></i>
+                       </div>
+
+                    </div>
+
+                    
+
+                </div>
+              </div>
+
+              <div class="col-lg-3 ps-md-0 col-md-6 mb-3 product">
+                <div class=" card shadow-sm ">
+                    <img class="" src="https://tradingshenzhen.com/13803-large_default/vivo-x100-16gb256gb.jpg" alt="">
+
+                    <div class="card-body p-4">
+                       <h5>VIVO V50 camera x100</h5>
+                       <del  class=" badge bg-danger">$500</del>
+                       <span class=" badge bg-success">$450</span>
+
+                       <div class="detail d-flex justify-content-center align-items-center">
+                        <i data-bs-toggle="modal" data-bs-target="#viewProduct" class="bi bi-search"></i>
+                        <i class="bi bi-heart"></i>
+                        <i class="bi bi-cart-plus"></i>
+                       </div>
+
+                    </div>
+
+                    
+
+                </div>
+              </div>
+
+              <div class="col-lg-3 ps-md-0 col-md-6 mb-3 product">
+                <div class=" card shadow-sm ">
+                    <img class="" src="https://tradingshenzhen.com/13803-large_default/vivo-x100-16gb256gb.jpg" alt="">
+
+                    <div class="card-body p-4">
+                       <h5>VIVO V50 camera x100</h5>
+                       <del  class=" badge bg-danger">$500</del>
+                       <span class=" badge bg-success">$450</span>
+
+                       <div class="detail d-flex justify-content-center align-items-center">
+                        <i data-bs-toggle="modal" data-bs-target="#viewProduct" class="bi bi-search"></i>
+                        <i class="bi bi-heart"></i>
+                        <i class="bi bi-cart-plus"></i>
+                       </div>
+
+                    </div>
+
+                    
+
+                </div>
+              </div>
+
+           </div>
+      </div>
+      <!-- products content end -->
+
+      <!-- contact us content start -->
+      <div class="contact-us text-center">
+
+         <p class=" text-uppercase opacity-75" style="font-size: 20px;">Subscribtion me with email</p>
+         <form action="">
+            <div class="input-group d-flex align-items-center justify-content-center">
+              <input type="text" class="w-50 me-1" id="subscript" placeholder="Enter your email">
+              <button type="submit" class="btn btn-outline-success rounded-1 p-3">Subscribe now</button>
+            </div>
+         </form>
+
+         <!-- <div class="contact-icon">
+           <a href="#"><i class="bi bi-facebook"></i></a>
+           <a href="#"><i class="bi bi-twitter"></i></a>
+           <a href="#"><i class="bi bi-instagram"></i></a>
+           <a href="#"><i class="bi bi-envelope"></i></a>
+           <a href="#"><i class="bi bi-telegram"></i></a>
+           <a href="#"><i class="bi bi-telephone-fill"></i></a>
+         </div> -->
+
+         
+      </div>
+      <!-- contact us content start -->
+
+      
+      <!-- Modal -->
+      <div class="modal fade" id="viewProduct" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header border-bottom-0">
+              <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row p-0 m-0">
+
+                    <div class="col-lg-7 col-md-6 col-sm-6">
+                       <img class="image-modal" src="https://tradingshenzhen.com/13803-large_default/vivo-x100-16gb256gb.jpg" alt="">
+                    </div>
+
+                    <div class="col-lg-5 col-md-6 col-sm-6">
+
+                       <h4>VIVO V50 camera x100</h4>
+                       <p> <span class=" badge bg-success">$400</span> FOR SALE </p>
+                       <p class=" opacity-75">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur urna vel ipsum consectetur, vel placerat urna facilisis. Nulla facilisi. Sed vel est vel felis lobortis malesuada ......</p>
+
+                       <div class="qty-control my-4">
+                         <button class=" border-0 bg-danger text-light">-</button>
+                         <input type="text" value="1" style="width: 50px;" readonly>
+                         <button class=" border-0 bg-success text-light">+</button>
+                       </div>
+
+                       <button class=" btn btn-primary">add to cart</button>
+
+                       <div class=" mt-2">
+                        <a href="" class=" opacity-75 text-dark">view product detail</a>
+                       </div>
+
+                    </div>
+
+                </div>
+                
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </div>
+    <!-- Content end   -->
+
+
+
+    <!-- Footer Start -->
+    <footer class="footer bg-dark text-light pt-5">
+      <div class="container">
+
+          <div class="row">
+
+              
+              <div class="col-lg-4  mb-4">
+                  <h3 class="text-uppercase glowing-text">SOKNA ONLINE SHOP</h3>
+                  <p class="opacity-75 mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquam euismod nunc, a ultricies neque.</p>
+                  <img src="https://www.pngall.com/wp-content/uploads/13/Shopify-Logo-PNG.png" alt="Logo" style="width: 200px;">
+              </div>
+
+              <!-- Quick Links -->
+              <div class="col-lg-4 text-center mb-4">
+                  <h5 class="text-uppercase">Quick Links</h5>
+                  <ul class="list-unstyled">
+                      <li><a href="#" class="text-light text-decoration-none">About Us</a></li>
+                      <li><a href="#" class="text-light text-decoration-none">Contact Us</a></li>
+                      <li><a href="#" class="text-light text-decoration-none">Terms & Conditions</a></li>
+                      <li><a href="#" class="text-light text-decoration-none">Privacy Policy</a></li>
+                  </ul>
+              </div>
+
+              <!-- Social Media -->
+              <div class="col-lg-4  text-center mb-4">
+                  <h5 class="text-uppercase">Follow Us</h5>
+                  <div>
+                      <a href="#" class="text-light me-3"><i class="bi bi-facebook"></i></a>
+                      <a href="#" class="text-light me-3"><i class="bi bi-twitter"></i></a>
+                      <a href="#" class="text-light me-3"><i class="bi bi-instagram"></i></a>
+                      <a href="#" class="text-light me-3"><i class="bi bi-linkedin"></i></a>
+                      <a href="#" class="text-light me-3"><i class=" bi bi-telegram"></i></a>
+                  </div>
+              </div>
+
+          </div>
+
+          <hr class="border-light">
+
+          <div class="row text-center">
+              <div class="col-12">
+                  <p class="mb-0">&copy; 2025 SOKNA SHOP. All Rights Reserved.</p>
+              </div>
+          </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+</body>
+<script src="bootstrap/bootstrap.bundle.min.js"></script>
+<script src="js/home.js"></script>
+</html>
