@@ -92,7 +92,7 @@ var showAllSlide = document.querySelector(".all-slides");
 slides.map((item,index) => {
     let slideHtml = ``;
     slideHtml += `
-        <div class="carousel-item ${index == 0 ? 'active' : ''}" data-bs-interval="5000">
+        <div class="carousel-item ${index == 0 ? 'active' : ''}" data-bs-interval="${index == 0 ? '5000' : '3000'}">
             <img src="${item.image}" class="d-block w-100" alt="...">
         </div>
     `;
