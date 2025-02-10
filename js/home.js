@@ -50,7 +50,7 @@ const slides = [
     }
 ]
 
-
+//Ctr + F
 const products = [
     // iPhones
     {
@@ -79,7 +79,7 @@ const products = [
         }
       ],
       "oldPrice": 999,
-      "newoldPrice": 949,
+      "newPrice": 949,
       "description": "The latest iPhone 15 offering advanced features and a sleek design."
     },
     {
@@ -99,7 +99,7 @@ const products = [
         }
         ],
       "oldPrice": 1099,
-      "newoldPrice": 1049,
+      "newPrice": 1049,
       "description": "Experience pro-level performance and camera quality with the iPhone 15 Pro."
     },
     {
@@ -130,7 +130,7 @@ const products = [
         }
       ],
       "oldPrice": 1199,
-      "newoldPrice": 1149,
+      "newPrice": 1149,
       "description": "The iPhone 15 Pro Max delivers unmatched power and a stunning display."
     },
     {
@@ -162,7 +162,7 @@ const products = [
         }
       ],
       "oldPrice": 1049,
-      "newoldPrice": 999,
+      "newPrice": 999,
       "description": "Enjoy a larger screen and top performance with the iPhone 15 Plus."
     },
     // Oppo Phones
@@ -194,7 +194,7 @@ const products = [
         }
       ],
       "oldPrice": 1099,
-      "newoldPrice": 1049,
+      "newPrice": 1049,
       "description": "Oppo Find X8 Pro offers innovative features and a futuristic design."
     },
     {
@@ -225,7 +225,7 @@ const products = [
         }
       ],
       "oldPrice": 799,
-      "newoldPrice": 749,
+      "newPrice": 749,
       "description": "Experience 5G speed and exceptional camera quality with the Oppo Reno8 Pro 5G."
     },
     {
@@ -256,7 +256,7 @@ const products = [
         }
       ],
       "oldPrice": 699,
-      "newoldPrice": 649,
+      "newPrice": 649,
       "description": "The Oppo F27 Pro packs advanced technology and an elegant design."
     },
     {
@@ -287,7 +287,7 @@ const products = [
         }
       ],
       "oldPrice": 499,
-      "newoldPrice": 459,
+      "newPrice": 459,
       "description": "Oppo A96 offers great value with reliable performance and a stylish look."
     },
     // Huawei Phones
@@ -319,7 +319,7 @@ const products = [
         }
       ],
       "oldPrice": 599,
-      "newoldPrice": 550,
+      "newPrice": 550,
       "description": "The HUAWEI nova 13 Pro features a cutting-edge camera system and sleek design."
     },
     {
@@ -350,7 +350,7 @@ const products = [
         }
       ],
       "oldPrice": 999,
-      "newoldPrice": 949,
+      "newPrice": 949,
       "description": "Experience top-tier performance and innovative design with the HUAWEI Mate 50 Pro."
     },
     {
@@ -381,7 +381,7 @@ const products = [
         }
       ],
       "oldPrice": 699,
-      "newoldPrice": 649,
+      "newPrice": 649,
       "description": "HUAWEI Pura 70 Ultra offers an exceptional balance of performance and design."
     },
     {
@@ -412,7 +412,7 @@ const products = [
         }
       ],
       "oldPrice": 999,
-      "newoldPrice": 949,
+      "newPrice": 949,
       "description": "The HUAWEI Pura 70 Pro delivers high performance and a premium design."
     },
     // Computer item
@@ -434,7 +434,7 @@ const products = [
         }
       ],
       "oldPrice": 749,
-      "newoldPrice": 699,
+      "newPrice": 699,
       "description": "Dell Inspiron 15 offers reliable performance and a sleek design, perfect for everyday computing."
     },
     {
@@ -444,7 +444,7 @@ const products = [
       "brand": "Dell",
       "img": "https://via.placeholder.com/300?text=Dell+XPS+Desktop",
       "oldPrice": 1299,
-      "newoldPrice": 1249,
+      "newPrice": 1249,
       "description": "Dell XPS Desktop delivers exceptional performance and cutting-edge technology for professional users."
     },
     {
@@ -454,7 +454,7 @@ const products = [
       "brand": "Dell",
       "img": "https://via.placeholder.com/300?text=Dell+All-in-One+27",
       "oldPrice": 999,
-      "newoldPrice": 949,
+      "newPrice": 949,
       "description": "Dell All-in-One 27 features a large display and integrated design, ideal for both work and leisure."
     },
     {
@@ -464,7 +464,7 @@ const products = [
       "brand": "Dell",
       "img": "https://via.placeholder.com/300?text=Dell+Convertible+2-in-1",
       "oldPrice": 1199,
-      "newoldPrice": 1149,
+      "newPrice": 1149,
       "description": "Experience the versatility of a laptop and tablet in one device with the Dell Convertible 2-in-1."
     },
     {
@@ -495,7 +495,7 @@ const products = [
         }
       ],
       "oldPrice": 399,
-      "newoldPrice": 379,
+      "newPrice": 379,
       "description": "The latest Apple Watch Series 9 features advanced health tracking and seamless connectivity."
     },
     {
@@ -526,7 +526,7 @@ const products = [
         }
       ],
       "oldPrice": 349,
-      "newoldPrice": 329,
+      "newPrice": 329,
       "description": "Samsung Galaxy Watch 6 combines modern design with innovative health tracking features."
     },
     {
@@ -557,7 +557,7 @@ const products = [
         }
       ],
       "oldPrice": 299,
-      "newoldPrice": 279,
+      "newPrice": 279,
       "description": "Fossil Gen 6 offers a classic design paired with modern smartwatch functionality."
     },
     {
@@ -588,7 +588,7 @@ const products = [
         }
       ],
       "oldPrice": 699,
-      "newoldPrice": 649,
+      "newPrice": 649,
       "description": "Garmin Fenix 7 is built for adventurers with robust tracking features and a durable design."
     }
   
@@ -695,3 +695,72 @@ categories.map((value,index) => {
         showCategoryRight.innerHTML += rightInner;
     }
 });
+
+
+var showProducts = document.querySelector(".show-all-products");
+
+products.slice(0,12).map((product) => {
+    let html = ``;
+
+    html += `
+            <div class="col-lg-3 ps-md-0 col-md-6 mb-3 product">
+                  <div class=" card shadow-sm ">
+                      <img class="" src="${product.img[0].name}" alt="">
+
+                      <div class="card-body p-4">
+                         <h5>${product.name}</h5>
+                         <del  class=" badge bg-danger">$${product.oldPrice}</del>
+                         <span class=" badge bg-success">$${product.newPrice}</span>
+
+                         <div class="detail d-flex justify-content-center align-items-center">
+                          <i onclick="productModal(${product.id})" data-bs-toggle="modal" data-bs-target="#viewProduct" class="bi bi-search"></i>
+                          <i class="bi bi-heart"></i>
+                          <i class="bi bi-cart-plus"></i>
+                         </div>
+
+                      </div>
+                  </div>
+            </div>
+    `;
+
+    showProducts.innerHTML += html;
+})
+
+
+
+const productModal = (id) => {
+    let modalShow   = document.querySelector('.show-single-product');
+
+    let productFind = products.find(product => product.id == id);
+
+    modalShow.innerHTML = `
+                <div class="row p-0 m-0">
+
+                    <div class="col-lg-7 col-md-6 col-sm-6">
+                       <img class="image-modal" src="${productFind.img[0].name}" alt="">
+                    </div>
+
+                    <div class="col-lg-5 col-md-6 col-sm-6">
+
+                       <h4>${productFind.name}</h4>
+                       <p> <span class=" badge bg-success">$${productFind.newPrice}</span> FOR SALE </p>
+                       <p class=" opacity-75">${productFind.description}</p>
+
+                       <div class="qty-control my-4">
+                         <button class=" border-0 bg-danger text-light">-</button>
+                         <input type="text" value="1" style="width: 50px;" readonly>
+                         <button class=" border-0 bg-success text-light">+</button>
+                       </div>
+
+                       <button class=" btn btn-primary">add to cart</button>
+
+                       <div class=" mt-2">
+                        <a href="" class=" opacity-75 text-dark">view product detail</a>
+                       </div>
+
+                    </div>
+
+                </div>
+    `;
+    
+}
