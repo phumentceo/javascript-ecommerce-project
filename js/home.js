@@ -58,6 +58,7 @@ const products = [
       "category": "Phone",
       "name": "iPhone 15",
       "brand": "Apple",
+      "qty"  : 10,
       "img": [
         {
           "id": 1,
@@ -87,6 +88,7 @@ const products = [
       "category": "Phone",
       "name": "iPhone 15 Pro",
       "brand": "Apple",
+      "qty"  : 10,
       "img":
         [{
           "id": 1,
@@ -107,6 +109,7 @@ const products = [
       "category": "Phone",
       "name": "iPhone 15 Pro Max",
       "brand": "Apple",
+      "qty"  : 10,
       "img": "https://www.istudiobyspvi.com/cdn/shop/files/iPhone_15_Pro_Max_Blue_Titanium_PDP_Image_Position-1__GBEN_c8ffdd92-450a-42c5-a88a-d1037806902d.jpg?v=1718116846&width=1445",
       "img": [
         {
@@ -138,6 +141,7 @@ const products = [
       "category": "Phone",
       "name": "iPhone 15 Plus",
       "brand": "Apple",
+      "qty"  : 10,
       "img": "https://soklyphone.com/storage/Apple/iphone/iPhone-15-Plus/iphone-15-plus-yellow-1696496872IIcjN.png",
       "img":"https://arystorephone.com/wp-content/uploads/2023/09/iphone-15-plus-blue.jpg",
       "img": [
@@ -171,6 +175,7 @@ const products = [
       "category": "Phone",
       "name": "Oppo Find X8 Pro",
       "brand": "Oppo",
+      "qty"  : 10,
   
       "img": [
         {
@@ -202,6 +207,7 @@ const products = [
       "category": "Phone",
       "name": "Oppo Reno13 Pro 5G",
       "brand": "Oppo",
+      "qty"  : 10,
       // "img": "https://down-my.img.susercontent.com/file/my-11134207-7rasi-m32zmjjduuuacc",
       "img": [
         {
@@ -233,6 +239,7 @@ const products = [
       "category": "Phone",
       "name": "Oppo F27 Pro",
       "brand": "Oppo",
+      "qty"  : 10,
       // "img": "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc4/oppo-f27-pro-5g-1.png",
       "img": [
         {
@@ -264,6 +271,7 @@ const products = [
       "category": "Phone",
       "name": "Oppo A96",
       "brand": "Oppo",
+      "qty"  : 10,
       // "img": "https://ares.shiftdelete.net/2024/11/oppo-a5-pro-600x600.webp",
       "img": [
         {
@@ -296,6 +304,7 @@ const products = [
       "category": "Phone",
       "name": "HUAWEI nova 13 Pro",
       "brand": "Huawei",
+      "qty"  : 10,
       // "img": "https://consumer.huawei.com/content/dam/huawei-cbg-site/common/mkt/plp-x/phones/winter-2024-new-product-launch/phones-new/images/nova-series/shelf-huawei-nova13-pro.png",
       "img": [
         {
@@ -327,6 +336,7 @@ const products = [
       "category": "Phone",
       "name": "HUAWEI Mate 50 Pro",
       "brand": "Huawei",
+      "qty"  : 10,
       // "img": "https://consumer.huawei.com/content/dam/huawei-cbg-site/common/mkt/plp-x/phones/winter-2024-new-product-launch/phones-new/images/mate-series/shelf-huawei-mate50-pro.png",
       "img": [
         {
@@ -358,6 +368,7 @@ const products = [
       "category": "Phone",
       "name": "HUAWEI Pura 70 Ultra",
       "brand": "Huawei",
+      "qty"  : 10,
   
       "img": [
         {
@@ -389,6 +400,7 @@ const products = [
       "category": "Phone",
       "name": "HUAWEI Pura 70 Pro",
       "brand": "Huawei",
+      "qty"  : 10,
       // "img": "https://consumer.huawei.com/dam/content/dam/huawei-cbg-site/common/mkt/plp-x/phones/winter-2024-new-product-launch/phones-new/images/pura-series/shelf-huawei-pura70-pro-white.png",
       "img": [
         {
@@ -421,6 +433,7 @@ const products = [
       "category": "Computer",
       "name": "Dell Inspiron 15",
       "brand": "Dell",
+      "qty"  : 10,
       "img": "https://soklyphone.com/storage/Huawei/HUAWEI-Watch/Huawei-Watch-GT-5-Pro/46-mm/black-fluoroelastomer-strap-2-1733383112CNQR1.png",
       "img":[
         {
@@ -442,6 +455,7 @@ const products = [
       "category": "Computer",
       "name": "Dell XPS Desktop",
       "brand": "Dell",
+      "qty"  : 10,
       "img": "https://via.placeholder.com/300?text=Dell+XPS+Desktop",
       "oldPrice": 1299,
       "newPrice": 1249,
@@ -452,6 +466,7 @@ const products = [
       "category": "Computer",
       "name": "Dell All-in-One 27",
       "brand": "Dell",
+      "qty"  : 10,
       "img": "https://via.placeholder.com/300?text=Dell+All-in-One+27",
       "oldPrice": 999,
       "newPrice": 949,
@@ -462,6 +477,7 @@ const products = [
       "category": "Computer",
       "name": "Dell Convertible 2-in-1",
       "brand": "Dell",
+      "qty"  : 10,
       "img": "https://via.placeholder.com/300?text=Dell+Convertible+2-in-1",
       "oldPrice": 1199,
       "newPrice": 1149,
@@ -472,6 +488,7 @@ const products = [
       "category": "Watch",
       "name": "Apple Watch Series 10",
       "brand": "Apple",
+      "qty"  : 10,
       // "img": "https://i5.walmartimages.com/asr/948cd6b9-1c5c-44dc-84d9-1fda6797e871.4a62aa32189952706f49a04c610c9fd0.jpeg",
       "img": [
         {
@@ -503,6 +520,7 @@ const products = [
       "category": "Watch",
       "name": "Samsung Galaxy Watch 6",
       "brand": "Samsung",
+      "qty"  : 10,
       // "img": "https://images.samsung.com/is/image/samsung/p6pim/ca/sm-r861nzkaxac/gallery/ca-galaxy-watch-fe-r861-sm-r861nzkaxac-thumb-542427451?$360_360_PNG$",
       "img": [
         {
@@ -534,6 +552,7 @@ const products = [
       "category": "Watch",
       "name": "Fossil Gen 8 Smartwatch",
       "brand": "Fossil",
+      "qty"  : 10,
       // "img": "https://imagescdn.thecollective.in/img/app/product/4/463982-3663667.jpg?w=500&auto=format",
       "img": [
         {
@@ -565,6 +584,7 @@ const products = [
       "category": "Watch",
       "name": "Garmin Fenix 8",
       "brand": "Garmin",
+      "qty"  : 10,
       // "img": "https://www.garmin.com.sg/m/sg/g/products/fenix-8-amoled-51-orange-cf-lg.jpg",
       "img": [
         {
@@ -728,7 +748,9 @@ products.slice(0,12).map((product) => {
 
 
 
+//Modal function
 const productModal = (id) => {
+    
     let modalShow   = document.querySelector('.show-single-product');
 
     let productFind = products.find(product => product.id == id);
@@ -748,11 +770,11 @@ const productModal = (id) => {
 
                        <div class="qty-control my-4">
                          <button class=" border-0 bg-danger text-light">-</button>
-                         <input type="text" value="1" style="width: 50px;" readonly>
-                         <button class=" border-0 bg-success text-light">+</button>
+                         <input type="text" id="product_qty" value="1" style="width: 50px;" readonly>
+                         <button onclick="increment(this,${productFind.id})" class=" border-0 bg-success text-light">+</button>
                        </div>
 
-                       <button class=" btn btn-primary">add to cart</button>
+                       <button onclick="addTocart(${productFind.id})" class=" btn btn-primary">add to cart</button>
 
                        <div class=" mt-2">
                         <a href="" class=" opacity-75 text-dark">view product detail</a>
@@ -763,4 +785,63 @@ const productModal = (id) => {
                 </div>
     `;
     
+}
+
+
+const increment = (e,id) => {
+
+    let parent = e.parentElement;  //get parrentElement of function
+    let qtyInput = parent.querySelector("#product_qty");
+
+    let checkQty = products.find(item => item.id == id);
+
+
+    if(checkQty.qty == qtyInput.value ){
+      message(`${checkQty.name} is out stock`,false);
+    }else{
+      qtyInput.value = parseInt(qtyInput.value) + 1;
+    }
+   
+}
+
+const decrement = () => {
+
+}
+
+
+const message = (text,status) => {
+  Toastify({
+    text: `${text}`,
+    duration: 3000,
+    destination: "https://github.com/apvarun/toastify-4js",
+    newWindow: true,
+    close: true,
+    gravity: "top", 
+    position: "right", 
+    stopOnFocus: true, 
+    style: {
+      background: `${status == true ? 'green' : 'red'}`,
+    },
+    onClick: function(){} // Callback after click
+  }).showToast();
+}
+
+
+
+var itemsCart = JSON.parse(localStorage.getItem('cart')) || [];
+
+const addTocart = (id) => {
+  
+  let productFind = products.find(product => product.id == id);
+
+  //push array
+  itemsCart.push(productFind);
+
+  //get products from itemsCart array insert into localStorage
+  localStorage.setItem('cart',JSON.stringify(itemsCart));
+
+  //alert message
+  message(`${productFind.name} add to cart success`,true);
+
+  
 }
