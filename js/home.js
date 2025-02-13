@@ -812,7 +812,7 @@ const decrement = () => {
 const message = (text,status) => {
   Toastify({
     text: `${text}`,
-    duration: 3000,
+    duration: 1000,
     destination: "https://github.com/apvarun/toastify-4js",
     newWindow: true,
     close: true,
@@ -834,14 +834,67 @@ const addTocart = (id) => {
   
   let productFind = products.find(product => product.id == id);
 
+  let productExist = itemsCart.find(product => product.id == id);
+
+  if(productExist){
+    message(`${productFind.name} has been added.`,false);
+    return false;
+  }
+
   //push array
   itemsCart.push(productFind);
 
   //get products from itemsCart array insert into localStorage
   localStorage.setItem('cart',JSON.stringify(itemsCart));
 
+  
   //alert message
   message(`${productFind.name} add to cart success`,true);
 
-  
+  //close modal 
+  $("#viewProduct").modal('hide');
+
+  //rander cart 
+  randerCart();
+
 }
+
+const deleteCart = (id) => {
+  if(confirm('Do you want to delete this?')){
+
+    itemsCart = itemsCart.filter(product => product.id != id);
+
+    localStorage.setItem('cart',JSON.stringify(itemsCart));
+
+    message(`Product delete success`,true);
+
+    randerCart();
+
+  }
+}
+
+const randerCart = () => {
+
+  let cartShow = document.querySelector(".cart-items-list");
+
+  let html = ``;
+
+  itemsCart.map(product => {
+    html += `
+      <div class="cart-item d-flex justify-content-between align-items-center mb-2">
+        <img style="width: 70px;" src="${product.img[0].name}" alt="">
+        <p><span class=" badge bg-success">$${product.newPrice}</span></p>
+        <p>Quantity : 3</p>
+        <button onclick="deleteCart(${product.id})" class="btn btn-sm btn-danger">Remove</button>
+      </div>
+    `;
+  })
+
+  
+
+  cartShow.innerHTML = html;
+
+}
+
+
+randerCart();
