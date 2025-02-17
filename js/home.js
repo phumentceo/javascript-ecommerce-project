@@ -735,7 +735,7 @@ products.slice(0,12).map((product) => {
                          <div class="detail d-flex justify-content-center align-items-center">
                           <i onclick="productModal(${product.id})" data-bs-toggle="modal" data-bs-target="#viewProduct" class="bi bi-search"></i>
                           <i class="bi bi-heart"></i>
-                          <i class="bi bi-cart-plus"></i>
+                          <i onclick="addTocart(${product.id})" class="bi bi-cart-plus"></i>
                          </div>
 
                       </div>
@@ -836,28 +836,66 @@ const addTocart = (id) => {
 
   let productExist = itemsCart.find(product => product.id == id);
 
+  // ចាប់យកតម្លៃ qty ពី input
+  // 1.
+  let qty = parseInt(document.querySelector("#product_qty").value);
+
   if(productExist){
-    message(`${productFind.name} has been added.`,false);
+    message(`${productFind.name} has been added.`, false);
     return false;
   }
 
-  //push array
-  itemsCart.push(productFind);
+  // Push product with quantity
+  //2.
+  itemsCart.push({...productFind, cartItemQty: qty});
 
-  //get products from itemsCart array insert into localStorage
-  localStorage.setItem('cart',JSON.stringify(itemsCart));
-
+     /*
+     {
+      "id": 1,
+      "category": "Phone",
+      "name": "iPhone 15",
+      "cartItemQty" : 5,
+      "brand": "Apple",
+      "qty"  : 10,
+      "img": [
+        {
+          "id": 1,
+          "name": "https://mobileleb.com/cdn/shop/files/apple-mobile-phone-apple-iphone-15-128gb-33291194957956_1200x1200.jpg?v=1694765742",
+        },
+        {
+          "id": 2,
+          "name": "https://mac-center.com/cdn/shop/files/IMG-10935071_e8d611ec-53bf-4319-8326-91c29d1bbc3b.jpg?v=1723749149&width=823"
+        }
+      ],
+      "color": [
+        {
+          "id": 1,
+          "name": "rgb(173, 216, 230)"
+        },
+        {
+          "id": 2,
+          "name": "rgb(144, 238, 144)"
+        }
+      ],
+      "oldPrice": 999,
+      "newPrice": 949,
+      "description": "The latest iPhone 15 offering advanced features and a sleek design."
+    },
+   */
   
-  //alert message
-  message(`${productFind.name} add to cart success`,true);
+  // Save to localStorage
+  localStorage.setItem('cart', JSON.stringify(itemsCart));
 
-  //close modal 
+  // Alert message
+  message(`${productFind.name} added to cart successfully`, true);
+
+  // Close modal 
   $("#viewProduct").modal('hide');
 
-  //rander cart 
+  // Render cart 
   randerCart();
-
 }
+
 
 const deleteCart = (id) => {
   if(confirm('Do you want to delete this?')){
@@ -868,15 +906,18 @@ const deleteCart = (id) => {
 
     message(`Product delete success`,true);
 
+    // Check if cart is empty and close offcanvas using jQuery
+    if (itemsCart.length === 0) {
+      $('.offcanvas').offcanvas('hide'); // Close the offcanvas
+    }
+
     randerCart();
 
   }
 }
 
 const randerCart = () => {
-
   let cartShow = document.querySelector(".cart-items-list");
-
   let html = ``;
 
   itemsCart.map(product => {
@@ -884,17 +925,15 @@ const randerCart = () => {
       <div class="cart-item d-flex justify-content-between align-items-center mb-2">
         <img style="width: 70px;" src="${product.img[0].name}" alt="">
         <p><span class=" badge bg-success">$${product.newPrice}</span></p>
-        <p>Quantity : 3</p>
+        <p>Quantity: ${product.cartItemQty}</p>
         <button onclick="deleteCart(${product.id})" class="btn btn-sm btn-danger">Remove</button>
       </div>
     `;
-  })
-
-  
+  });
 
   cartShow.innerHTML = html;
-
 }
+
 
 
 randerCart();
